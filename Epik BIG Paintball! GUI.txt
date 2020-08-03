@@ -1,0 +1,445 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("ImageLabel")
+local Frame_2 = Instance.new("ImageLabel")
+local frame2 = Instance.new("Frame")
+local InfAmmo = Instance.new("TextButton")
+local norecoil = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel3 = Instance.new("TextLabel")
+local RapidFire = Instance.new("TextButton")
+local Fastwalk = Instance.new("TextButton")
+local AutoOverride = Instance.new("TextButton")
+local ZoomOverride = Instance.new("TextButton")
+local RadarESP = Instance.new("TextButton")
+local TurretESP = Instance.new("TextButton")
+local DroneESP = Instance.new("TextButton")
+local TextLabel2 = Instance.new("TextLabel")
+local TextLabel4 = Instance.new("TextLabel")
+local UnlockAll = Instance.new("TextButton")
+local openclose = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame.Name = "Frame"
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.34414947, 0, 0.112595409, 0)
+Frame.Selectable = true
+Frame.Size = UDim2.new(0, 200, 0, 300)
+Frame.Image = "rbxassetid://3570695787"
+Frame.ImageColor3 = Color3.fromRGB(138, 138, 138)
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame.SliceScale = 0.120
+
+Frame_2.Name = "Frame"
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.BackgroundTransparency = 1.000
+Frame_2.Position = UDim2.new(-0.000850524928, 0, -0.000737915048, 0)
+Frame_2.Size = UDim2.new(0, 200, 0, 40)
+Frame_2.Image = "rbxassetid://3570695787"
+Frame_2.ImageColor3 = Color3.fromRGB(102, 102, 102)
+Frame_2.ScaleType = Enum.ScaleType.Slice
+Frame_2.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame_2.SliceScale = 0.120
+
+frame2.Name = "frame2"
+frame2.Parent = Frame
+frame2.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+frame2.BorderSizePixel = 0
+frame2.Position = UDim2.new(0, 0, 0.0599999987, 0)
+frame2.Size = UDim2.new(0, 200, 0, 21)
+
+InfAmmo.Name = "InfAmmo"
+InfAmmo.Parent = Frame
+InfAmmo.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+InfAmmo.BorderSizePixel = 0
+InfAmmo.Position = UDim2.new(0.523377657, 0, 0.16944021, 0)
+InfAmmo.Size = UDim2.new(0, 95, 0, 24)
+InfAmmo.Font = Enum.Font.SourceSans
+InfAmmo.Text = "Inf Ammo"
+InfAmmo.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfAmmo.TextSize = 14.000
+
+norecoil.Name = "norecoil"
+norecoil.Parent = Frame
+norecoil.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+norecoil.BorderSizePixel = 0
+norecoil.Position = UDim2.new(-0.00101776118, 0, 0.16944021, 0)
+norecoil.Size = UDim2.new(0, 95, 0, 24)
+norecoil.Font = Enum.Font.SourceSans
+norecoil.Text = "No Recoil"
+norecoil.TextColor3 = Color3.fromRGB(255, 255, 255)
+norecoil.TextSize = 14.000
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0, 0, -0.00333333574, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 39)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "epik big paintball gui"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+
+TextLabel3.Name = "TextLabel3"
+TextLabel3.Parent = Frame
+TextLabel3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel3.BackgroundTransparency = 1.000
+TextLabel3.Position = UDim2.new(0, 0, 0.949440122, 0)
+TextLabel3.Size = UDim2.new(0, 200, 0, 15)
+TextLabel3.Font = Enum.Font.SourceSans
+TextLabel3.Text = "credts to Jas_N#0501 for epik scripts"
+TextLabel3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel3.TextSize = 14.000
+
+RapidFire.Name = "RapidFire"
+RapidFire.Parent = Frame
+RapidFire.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+RapidFire.BorderSizePixel = 0
+RapidFire.Position = UDim2.new(-0.00101776118, 0, 0.282773525, 0)
+RapidFire.Size = UDim2.new(0, 95, 0, 24)
+RapidFire.Font = Enum.Font.SourceSans
+RapidFire.Text = "Rapid Fire"
+RapidFire.TextColor3 = Color3.fromRGB(255, 255, 255)
+RapidFire.TextSize = 14.000
+
+Fastwalk.Name = "Fastwalk"
+Fastwalk.Parent = Frame
+Fastwalk.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+Fastwalk.BorderSizePixel = 0
+Fastwalk.Position = UDim2.new(0.523982227, 0, 0.282773525, 0)
+Fastwalk.Size = UDim2.new(0, 95, 0, 24)
+Fastwalk.Font = Enum.Font.SourceSans
+Fastwalk.Text = "Fast Walk"
+Fastwalk.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fastwalk.TextSize = 14.000
+
+AutoOverride.Name = "AutoOverride"
+AutoOverride.Parent = Frame
+AutoOverride.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+AutoOverride.BorderSizePixel = 0
+AutoOverride.Position = UDim2.new(0.523982227, 0, 0.469440192, 0)
+AutoOverride.Size = UDim2.new(0, 95, 0, 24)
+AutoOverride.Font = Enum.Font.SourceSans
+AutoOverride.Text = "Auto Override"
+AutoOverride.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoOverride.TextSize = 14.000
+
+ZoomOverride.Name = "ZoomOverride"
+ZoomOverride.Parent = Frame
+ZoomOverride.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+ZoomOverride.BorderSizePixel = 0
+ZoomOverride.Position = UDim2.new(-0.00101776118, 0, 0.469440192, 0)
+ZoomOverride.Size = UDim2.new(0, 95, 0, 24)
+ZoomOverride.Font = Enum.Font.SourceSans
+ZoomOverride.Text = "Zoom Override"
+ZoomOverride.TextColor3 = Color3.fromRGB(255, 255, 255)
+ZoomOverride.TextSize = 14.000
+
+RadarESP.Name = "RadarESP"
+RadarESP.Parent = Frame
+RadarESP.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+RadarESP.BorderSizePixel = 0
+RadarESP.Position = UDim2.new(0.523982227, 0, 0.582773507, 0)
+RadarESP.Size = UDim2.new(0, 95, 0, 30)
+RadarESP.Font = Enum.Font.SourceSans
+RadarESP.Text = "Radar ESP"
+RadarESP.TextColor3 = Color3.fromRGB(255, 255, 255)
+RadarESP.TextSize = 14.000
+
+TurretESP.Name = "TurretESP"
+TurretESP.Parent = Frame
+TurretESP.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+TurretESP.BorderSizePixel = 0
+TurretESP.Position = UDim2.new(-0.00101774186, 0, 0.716106772, 0)
+TurretESP.Size = UDim2.new(0, 95, 0, 30)
+TurretESP.Font = Enum.Font.SourceSans
+TurretESP.Text = "Turret ESP"
+TurretESP.TextColor3 = Color3.fromRGB(255, 255, 255)
+TurretESP.TextSize = 14.000
+
+DroneESP.Name = "DroneESP"
+DroneESP.Parent = Frame
+DroneESP.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+DroneESP.BorderSizePixel = 0
+DroneESP.Position = UDim2.new(0.523982227, 0, 0.716106772, 0)
+DroneESP.Size = UDim2.new(0, 95, 0, 30)
+DroneESP.Font = Enum.Font.SourceSans
+DroneESP.Text = "Drone ESP"
+DroneESP.TextColor3 = Color3.fromRGB(255, 255, 255)
+DroneESP.TextSize = 14.000
+
+TextLabel2.Name = "TextLabel2"
+TextLabel2.Parent = Frame
+TextLabel2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel2.BackgroundTransparency = 1.000
+TextLabel2.Position = UDim2.new(0, 0, 0.892773449, 0)
+TextLabel2.Size = UDim2.new(0, 200, 0, 17)
+TextLabel2.Font = Enum.Font.SourceSans
+TextLabel2.Text = "credits to Harold#7777 for unlock all script"
+TextLabel2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel2.TextSize = 13.000
+
+TextLabel4.Name = "TextLabel4"
+TextLabel4.Parent = Frame
+TextLabel4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel4.BackgroundTransparency = 1.000
+TextLabel4.Position = UDim2.new(0, 0, 0.38944006, 0)
+TextLabel4.Size = UDim2.new(0, 200, 0, 17)
+TextLabel4.Font = Enum.Font.SourceSans
+TextLabel4.Text = "made by artureanskii#4263"
+TextLabel4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel4.TextSize = 14.000
+
+UnlockAll.Name = "Unlock All"
+UnlockAll.Parent = Frame
+UnlockAll.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+UnlockAll.BorderSizePixel = 0
+UnlockAll.Position = UDim2.new(0.00398223894, 0, 0.579440236, 0)
+UnlockAll.Size = UDim2.new(0, 94, 0, 30)
+UnlockAll.Font = Enum.Font.SourceSans
+UnlockAll.Text = "Unlock All"
+UnlockAll.TextColor3 = Color3.fromRGB(255, 255, 255)
+UnlockAll.TextSize = 14.000
+
+openclose.Name = "openclose"
+openclose.Parent = ScreenGui
+openclose.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+openclose.Position = UDim2.new(0, 0, 0.368320614, 0)
+openclose.Size = UDim2.new(0, 50, 0, 20)
+openclose.Font = Enum.Font.SourceSans
+openclose.Text = "Close"
+openclose.TextColor3 = Color3.fromRGB(255, 255, 255)
+openclose.TextSize = 14.000
+
+-- Scripts:
+
+local function ZLJI_fake_script() -- Frame.LocalScript
+local script = Instance.new('LocalScript', Frame)
+
+script.Parent.Draggable = true
+script.Parent.Active = true
+script.Parent.Selectable = true
+end
+coroutine.wrap(ZLJI_fake_script)()
+local function TQGJARC_fake_script() -- InfAmmo.Script
+local script = Instance.new('Script', InfAmmo)
+
+button = script.Parent
+
+button.MouseButton1Click:Connect(function()
+local checks={ "Ammo", "ammo", "Damage", "damage", "Firerate", "firerate", "FireRate", "fireRate", "Recoil", "recoil", "Spread", "spread", "ability", "Ability" }
+for i,v in pairs(getgc(true))do
+  for x=1,#checks do
+      if type(v)=="table" and rawget(v,checks[x]) then
+          v.LoadedAmmo=math.huge
+      end
+  end
+end
+end)
+end
+coroutine.wrap(TQGJARC_fake_script)()
+local function QCQV_fake_script() -- norecoil.Script
+local script = Instance.new('Script', norecoil)
+
+button = script.Parent
+
+button.MouseButton1Click:Connect(function()
+local checks={ "Ammo", "ammo", "Damage", "damage", "Firerate", "firerate", "FireRate", "fireRate", "Recoil", "recoil", "Spread", "spread", "ability", "Ability" }
+for i,v in pairs(getgc(true))do
+  for x=1,#checks do
+      if type(v)=="table" and rawget(v,checks[x]) then
+          v.velocity=1000000
+      end
+  end
+end
+end)
+end
+coroutine.wrap(QCQV_fake_script)()
+local function HOKKNSS_fake_script() -- RapidFire.Script
+local script = Instance.new('Script', RapidFire)
+
+button = script.Parent
+
+button.MouseButton1Click:Connect(function()
+local checks={ "Ammo", "ammo", "Damage", "damage", "Firerate", "firerate", "FireRate", "fireRate", "Recoil", "recoil", "Spread", "spread", "ability", "Ability" }
+for i,v in pairs(getgc(true))do
+  for x=1,#checks do
+      if type(v)=="table" and rawget(v,checks[x]) then
+          v.firerate=0
+          v.burstDelay=0
+      end
+  end
+end
+
+end)
+end
+coroutine.wrap(HOKKNSS_fake_script)()
+local function WRIHI_fake_script() -- Fastwalk.Script
+local script = Instance.new('Script', Fastwalk)
+
+button = script.Parent
+
+button.MouseButton1Click:Connect(function()
+local checks={ "Ammo", "ammo", "Damage", "damage", "Firerate", "firerate", "FireRate", "fireRate", "Recoil", "recoil", "Spread", "spread", "ability", "Ability" }
+for i,v in pairs(getgc(true))do
+  for x=1,#checks do
+      if type(v)=="table" and rawget(v,checks[x]) then
+          v.additionalSpeed=11.5
+      end
+  end
+end
+end)
+end
+coroutine.wrap(WRIHI_fake_script)()
+local function LYLV_fake_script() -- AutoOverride.Script
+local script = Instance.new('Script', AutoOverride)
+
+button = script.Parent
+
+button.MouseButton1Click:Connect(function()
+local checks={ "Ammo", "ammo", "Damage", "damage", "Firerate", "firerate", "FireRate", "fireRate", "Recoil", "recoil", "Spread", "spread", "ability", "Ability" }
+for i,v in pairs(getgc(true))do
+  for x=1,#checks do
+      if type(v)=="table" and rawget(v,checks[x]) then
+          v.automatic=true
+      end
+  end
+end
+end)
+end
+coroutine.wrap(LYLV_fake_script)()
+local function HMAQS_fake_script() -- ZoomOverride.Script
+local script = Instance.new('Script', ZoomOverride)
+
+button = script.Parent
+
+button.MouseButton1Click:Connect(function()
+local checks={ "Ammo", "ammo", "Damage", "damage", "Firerate", "firerate", "FireRate", "fireRate", "Recoil", "recoil", "Spread", "spread", "ability", "Ability" }
+for i,v in pairs(getgc(true))do
+  for x=1,#checks do
+      if type(v)=="table" and rawget(v,checks[x]) then
+          v.zoomAmount=5
+      end
+  end
+end
+end)
+end
+coroutine.wrap(HMAQS_fake_script)()
+local function JZARDKM_fake_script() -- RadarESP.Script
+local script = Instance.new('Script', RadarESP)
+
+button = script.Parent
+
+button.MouseButton1Click:Connect(function()
+function newRadarESP(c)
+  local radarESP = game.ReplicatedStorage.Assets.RadarPing:Clone()
+  radarESP.Parent = c.Head
+end
+for i,v in pairs(game.Players:GetPlayers())do
+  if v~=game.Players.LocalPlayer then
+      newRadarESP(v.Character)
+      v.CharacterAdded:Connect(function(c)
+          repeat wait()until c:FindFirstChild("Head")
+          newRadarESP(c)
+      end)
+  end
+end
+game.Players.PlayerAdded:Connect(function(p)
+  p.CharacterAdded:Connect(function(c)
+      repeat wait()until c:FindFirstChild("Head")
+      newRadarESP(c)
+  end)
+end)
+
+end)
+end
+coroutine.wrap(JZARDKM_fake_script)()
+local function YUFDFR_fake_script() -- TurretESP.Script
+local script = Instance.new('Script', TurretESP)
+
+button = script.Parent
+
+button.MouseButton1Click:Connect(function()
+for i,v in pairs(game.Workspace.__THINGS.Sentries:GetChildren())do
+  local gadgetESP=game.ReplicatedStorage.Assets.GadgetIndicator:Clone()
+  gadgetESP.Parent=v["Turret Bottom"]
+  gadgetESP.Frame.BackgroundColor3=Color3.fromRGB(255,30,30)
+end
+game.Workspace.__THINGS.Sentries.ChildAdded:Connect(function(c)
+  if tostring(c)==tostring(game.Players.LocalPlayer) then return end
+  repeat wait()until c:FindFirstChild("Turret Bottom")
+  local gadgetESP=game.ReplicatedStorage.Assets.GadgetIndicator:Clone()
+  gadgetESP.Parent=c["Turret Bottom"]
+  gadgetESP.Frame.BackgroundColor3=Color3.fromRGB(255,30,30)
+end)
+
+end)
+end
+coroutine.wrap(YUFDFR_fake_script)()
+local function FLQRFC_fake_script() -- DroneESP.Script
+local script = Instance.new('Script', DroneESP)
+
+button = script.Parent
+
+button.MouseButton1Click:Connect(function()
+for i,v in pairs(game.Workspace.__THINGS.Drones:GetChildren())do
+  local gadgetESP=game.ReplicatedStorage.Assets.GadgetIndicator:Clone()
+  gadgetESP.Parent=v["Base"]
+  gadgetESP.Frame.BackgroundColor3=Color3.fromRGB(255,30,30)
+end
+game.Workspace.__THINGS.Drones.ChildAdded:Connect(function(c)
+  if tostring(c)==tostring(game.Players.LocalPlayer) then return end
+  repeat wait()until c:FindFirstChild("Base")
+  local gadgetESP=game.ReplicatedStorage.Assets.GadgetIndicator:Clone()
+  gadgetESP.Parent=c["Base"]
+  gadgetESP.Frame.BackgroundColor3=Color3.fromRGB(30,30,255)
+end)
+end)
+end
+coroutine.wrap(FLQRFC_fake_script)()
+local function BTGHFPS_fake_script() -- UnlockAll.Script
+local script = Instance.new('Script', UnlockAll)
+
+button = script.Parent
+
+button.MouseButton1Click:Connect(function()
+loadstring(game.HttpGet(game, "https://pastebin.com/raw/EjikdmZx")) ()
+end)
+end
+coroutine.wrap(BTGHFPS_fake_script)()
+local function TBPN_fake_script() -- openclose.LocalScript
+local script = Instance.new('LocalScript', openclose)
+
+script.Parent.Draggable = true
+script.Parent.Active = true
+script.Parent.Selectable = true
+end
+coroutine.wrap(TBPN_fake_script)()
+local function AQPR_fake_script() -- openclose.Script
+local script = Instance.new('Script', openclose)
+
+button = script.Parent
+gui = script.Parent.Parent.Frame
+
+button.MouseButton1Click:Connect(function()
+if gui.Visible == true then
+gui. Visible = false
+button.Text = "Open"
+elseif gui.Visible == false then
+gui.Visible = true
+button.Text = "Close"
+end
+end)
+end
+coroutine.wrap(AQPR_fake_script)()
